@@ -1,5 +1,15 @@
 # Rare Protocol Core Smart Contract
 
+## Deploy
+
+### RareStakingDeploy
+
+Follow `script/staking/RareStakingDeploy.sol` script to deploy and get the address for `stakingRegistry` which will be used when deploying `SuperRareBazaar`.
+
+### SuperRareBazaar
+
+Follow `script/NetworkDeploy.sol` to deploy the `SuperRareBazaar.sol` marketplace.
+
 ## Contracts
 
 ### Staking
