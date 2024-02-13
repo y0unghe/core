@@ -1,0 +1,421 @@
+{
+  "abi": [
+    {
+      "type": "function",
+      "name": "calculateMarketplacePayoutFee",
+      "inputs": [
+        { "name": "_amount", "type": "uint256", "internalType": "uint256" }
+      ],
+      "outputs": [{ "name": "", "type": "uint256", "internalType": "uint256" }],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "calculateStakingFee",
+      "inputs": [
+        { "name": "_amount", "type": "uint256", "internalType": "uint256" }
+      ],
+      "outputs": [{ "name": "", "type": "uint256", "internalType": "uint256" }],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "getStakingFeePercentage",
+      "inputs": [],
+      "outputs": [{ "name": "", "type": "uint8", "internalType": "uint8" }],
+      "stateMutability": "view"
+    }
+  ],
+  "bytecode": { "object": "0x", "sourceMap": "", "linkReferences": {} },
+  "deployedBytecode": { "object": "0x", "sourceMap": "", "linkReferences": {} },
+  "methodIdentifiers": {
+    "calculateMarketplacePayoutFee(uint256)": "0ff77844",
+    "calculateStakingFee(uint256)": "8e1addb2",
+    "getStakingFeePercentage()": "9d5fb53c"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.18+commit.87f61d96\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_amount\",\"type\":\"uint256\"}],\"name\":\"calculateMarketplacePayoutFee\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_amount\",\"type\":\"uint256\"}],\"name\":\"calculateStakingFee\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getStakingFeePercentage\",\"outputs\":[{\"internalType\":\"uint8\",\"name\":\"\",\"type\":\"uint8\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"calculateMarketplacePayoutFee(uint256)\":{\"details\":\"Utility function for calculating the marketplace payout fee for given amount of wei. marketplaceFee - stakingFee\",\"params\":{\"_amount\":\"uint256 wei amount.\"},\"returns\":{\"_0\":\"uint256 wei fee.\"}},\"calculateStakingFee(uint256)\":{\"details\":\"Utility function for calculating the staking fee for given amount of wei.\",\"params\":{\"_amount\":\"uint256 wei amount.\"},\"returns\":{\"_0\":\"uint256 wei fee.\"}},\"getStakingFeePercentage()\":{\"details\":\"Get the staking percentage.\",\"returns\":{\"_0\":\"uint8 wei staking fee percentage.\"}}},\"title\":\"IStakingSettings Settings governing a staking config for a marketplace.\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/marketplace/IStakingSettings.sol\":\"IStakingSettings\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@ensdomains/buffer/=lib/buffer/\",\":@ensdomains/ens-contracts/=lib/ens-contracts/contracts/\",\":@openzeppelin/contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/\",\":@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/\",\":@uniswap/v3-core/=lib/v3-core/contracts/\",\":@uniswap/v3-core/contracts/=lib/v3-core/contracts/\",\":@uniswap/v3-periphery/=lib/v3-periphery/contracts/\",\":arachnid/solidity-stringutils/=lib/solidity-stringutils/\",\":ds-test/=lib/ds-test/src/\",\":ensdomains/ens-contracts/=lib/ensdomains/ens-contracts/contracts/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/\",\":rareprotocol/assets/=lib/assets/src/\",\":rareprotocol/aux/=src/\",\":royalty-guard/=lib/royalty-guard/src/royalty-guard/\",\":royalty-registry-solidity/=lib/royalty-registry-solidity/contracts/\",\":royalty-registry/=lib/royalty-registry-solidity/contracts/\",\":solmate/=lib/solmate/src/\"],\"viaIR\":true},\"sources\":{\"src/marketplace/IStakingSettings.sol\":{\"keccak256\":\"0xb470dc177e9d6bf92f31fae722b38195c2de8c2121b9df3ec9391b7ce361f501\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://82508cf251aa646341d5393251f15cb68524f4b2ddc0d327d3637d4592125fda\",\"dweb:/ipfs/QmURvsW8RLKwimfwA6Y5D3CqKAVGTSdqNWjHjhtTSFWGP4\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": { "version": "0.8.18+commit.87f61d96" },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            { "internalType": "uint256", "name": "_amount", "type": "uint256" }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "calculateMarketplacePayoutFee",
+          "outputs": [
+            { "internalType": "uint256", "name": "", "type": "uint256" }
+          ]
+        },
+        {
+          "inputs": [
+            { "internalType": "uint256", "name": "_amount", "type": "uint256" }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "calculateStakingFee",
+          "outputs": [
+            { "internalType": "uint256", "name": "", "type": "uint256" }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getStakingFeePercentage",
+          "outputs": [{ "internalType": "uint8", "name": "", "type": "uint8" }]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {
+          "calculateMarketplacePayoutFee(uint256)": {
+            "details": "Utility function for calculating the marketplace payout fee for given amount of wei. marketplaceFee - stakingFee",
+            "params": { "_amount": "uint256 wei amount." },
+            "returns": { "_0": "uint256 wei fee." }
+          },
+          "calculateStakingFee(uint256)": {
+            "details": "Utility function for calculating the staking fee for given amount of wei.",
+            "params": { "_amount": "uint256 wei amount." },
+            "returns": { "_0": "uint256 wei fee." }
+          },
+          "getStakingFeePercentage()": {
+            "details": "Get the staking percentage.",
+            "returns": { "_0": "uint8 wei staking fee percentage." }
+          }
+        },
+        "version": 1
+      },
+      "userdoc": { "kind": "user", "methods": {}, "version": 1 }
+    },
+    "settings": {
+      "remappings": [
+        "@ensdomains/buffer/=lib/buffer/",
+        "@ensdomains/ens-contracts/=lib/ens-contracts/contracts/",
+        "@openzeppelin/contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/",
+        "@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/",
+        "@uniswap/v3-core/=lib/v3-core/contracts/",
+        "@uniswap/v3-core/contracts/=lib/v3-core/contracts/",
+        "@uniswap/v3-periphery/=lib/v3-periphery/contracts/",
+        "arachnid/solidity-stringutils/=lib/solidity-stringutils/",
+        "ds-test/=lib/ds-test/src/",
+        "ensdomains/ens-contracts/=lib/ensdomains/ens-contracts/contracts/",
+        "forge-std/=lib/forge-std/src/",
+        "openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/",
+        "openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/",
+        "rareprotocol/assets/=lib/assets/src/",
+        "rareprotocol/aux/=src/",
+        "royalty-guard/=lib/royalty-guard/src/royalty-guard/",
+        "royalty-registry-solidity/=lib/royalty-registry-solidity/contracts/",
+        "royalty-registry/=lib/royalty-registry-solidity/contracts/",
+        "solmate/=lib/solmate/src/"
+      ],
+      "optimizer": { "enabled": true, "runs": 200 },
+      "metadata": { "bytecodeHash": "ipfs" },
+      "compilationTarget": {
+        "src/marketplace/IStakingSettings.sol": "IStakingSettings"
+      },
+      "evmVersion": "paris",
+      "libraries": {},
+      "viaIR": true
+    },
+    "sources": {
+      "src/marketplace/IStakingSettings.sol": {
+        "keccak256": "0xb470dc177e9d6bf92f31fae722b38195c2de8c2121b9df3ec9391b7ce361f501",
+        "urls": [
+          "bzz-raw://82508cf251aa646341d5393251f15cb68524f4b2ddc0d327d3637d4592125fda",
+          "dweb:/ipfs/QmURvsW8RLKwimfwA6Y5D3CqKAVGTSdqNWjHjhtTSFWGP4"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/marketplace/IStakingSettings.sol",
+    "id": 60664,
+    "exportedSymbols": { "IStakingSettings": [60663] },
+    "nodeType": "SourceUnit",
+    "src": "32:938:160",
+    "nodes": [
+      {
+        "id": 60639,
+        "nodeType": "PragmaDirective",
+        "src": "32:23:160",
+        "nodes": [],
+        "literals": ["solidity", "^", "0.8", ".0"]
+      },
+      {
+        "id": 60663,
+        "nodeType": "ContractDefinition",
+        "src": "147:822:160",
+        "nodes": [
+          {
+            "id": 60646,
+            "nodeType": "FunctionDefinition",
+            "src": "285:65:160",
+            "nodes": [],
+            "documentation": {
+              "id": 60641,
+              "nodeType": "StructuredDocumentation",
+              "src": "180:100:160",
+              "text": " @dev Get the staking percentage.\n @return uint8 wei staking fee percentage."
+            },
+            "functionSelector": "9d5fb53c",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getStakingFeePercentage",
+            "nameLocation": "294:23:160",
+            "parameters": {
+              "id": 60642,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "317:2:160"
+            },
+            "returnParameters": {
+              "id": 60645,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 60644,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 60646,
+                  "src": "343:5:160",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 60643,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "343:5:160",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "342:7:160"
+            },
+            "scope": 60663,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 60654,
+            "nodeType": "FunctionDefinition",
+            "src": "532:102:160",
+            "nodes": [],
+            "documentation": {
+              "id": 60647,
+              "nodeType": "StructuredDocumentation",
+              "src": "356:171:160",
+              "text": " @dev Utility function for calculating the staking fee for given amount of wei.\n @param _amount uint256 wei amount.\n @return uint256 wei fee."
+            },
+            "functionSelector": "8e1addb2",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "calculateStakingFee",
+            "nameLocation": "541:19:160",
+            "parameters": {
+              "id": 60650,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 60649,
+                  "mutability": "mutable",
+                  "name": "_amount",
+                  "nameLocation": "569:7:160",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 60654,
+                  "src": "561:15:160",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 60648,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "561:7:160",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "560:17:160"
+            },
+            "returnParameters": {
+              "id": 60653,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 60652,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 60654,
+                  "src": "625:7:160",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 60651,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "625:7:160",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "624:9:160"
+            },
+            "scope": 60663,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 60662,
+            "nodeType": "FunctionDefinition",
+            "src": "855:112:160",
+            "nodes": [],
+            "documentation": {
+              "id": 60655,
+              "nodeType": "StructuredDocumentation",
+              "src": "640:210:160",
+              "text": " @dev Utility function for calculating the marketplace payout fee for given amount of wei. marketplaceFee - stakingFee\n @param _amount uint256 wei amount.\n @return uint256 wei fee."
+            },
+            "functionSelector": "0ff77844",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "calculateMarketplacePayoutFee",
+            "nameLocation": "864:29:160",
+            "parameters": {
+              "id": 60658,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 60657,
+                  "mutability": "mutable",
+                  "name": "_amount",
+                  "nameLocation": "902:7:160",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 60662,
+                  "src": "894:15:160",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 60656,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "894:7:160",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "893:17:160"
+            },
+            "returnParameters": {
+              "id": 60661,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 60660,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 60662,
+                  "src": "958:7:160",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 60659,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "958:7:160",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "957:9:160"
+            },
+            "scope": 60663,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IStakingSettings",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 60640,
+          "nodeType": "StructuredDocumentation",
+          "src": "57:89:160",
+          "text": " @title IStakingSettings Settings governing a staking config for a marketplace."
+        },
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [60663],
+        "name": "IStakingSettings",
+        "nameLocation": "157:16:160",
+        "scope": 60664,
+        "usedErrors": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 160
+}

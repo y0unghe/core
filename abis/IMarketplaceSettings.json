@@ -1,0 +1,1177 @@
+{
+  "abi": [
+    {
+      "type": "function",
+      "name": "calculateMarketplaceFee",
+      "inputs": [
+        { "name": "_amount", "type": "uint256", "internalType": "uint256" }
+      ],
+      "outputs": [{ "name": "", "type": "uint256", "internalType": "uint256" }],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "calculatePrimarySaleFee",
+      "inputs": [
+        {
+          "name": "_contractAddress",
+          "type": "address",
+          "internalType": "address"
+        },
+        { "name": "_amount", "type": "uint256", "internalType": "uint256" }
+      ],
+      "outputs": [{ "name": "", "type": "uint256", "internalType": "uint256" }],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "getERC721ContractPrimarySaleFeePercentage",
+      "inputs": [
+        {
+          "name": "_contractAddress",
+          "type": "address",
+          "internalType": "address"
+        }
+      ],
+      "outputs": [{ "name": "", "type": "uint8", "internalType": "uint8" }],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "getMarketplaceFeePercentage",
+      "inputs": [],
+      "outputs": [{ "name": "", "type": "uint8", "internalType": "uint8" }],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "getMarketplaceMaxValue",
+      "inputs": [],
+      "outputs": [{ "name": "", "type": "uint256", "internalType": "uint256" }],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "getMarketplaceMinValue",
+      "inputs": [],
+      "outputs": [{ "name": "", "type": "uint256", "internalType": "uint256" }],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "hasERC721TokenSold",
+      "inputs": [
+        {
+          "name": "_contractAddress",
+          "type": "address",
+          "internalType": "address"
+        },
+        { "name": "_tokenId", "type": "uint256", "internalType": "uint256" }
+      ],
+      "outputs": [{ "name": "", "type": "bool", "internalType": "bool" }],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "markERC721Token",
+      "inputs": [
+        {
+          "name": "_contractAddress",
+          "type": "address",
+          "internalType": "address"
+        },
+        { "name": "_tokenId", "type": "uint256", "internalType": "uint256" },
+        { "name": "_hasSold", "type": "bool", "internalType": "bool" }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "setERC721ContractPrimarySaleFeePercentage",
+      "inputs": [
+        {
+          "name": "_contractAddress",
+          "type": "address",
+          "internalType": "address"
+        },
+        { "name": "_percentage", "type": "uint8", "internalType": "uint8" }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    }
+  ],
+  "bytecode": { "object": "0x", "sourceMap": "", "linkReferences": {} },
+  "deployedBytecode": { "object": "0x", "sourceMap": "", "linkReferences": {} },
+  "methodIdentifiers": {
+    "calculateMarketplaceFee(uint256)": "c3fc4952",
+    "calculatePrimarySaleFee(address,uint256)": "6357f1ac",
+    "getERC721ContractPrimarySaleFeePercentage(address)": "b28a7bad",
+    "getMarketplaceFeePercentage()": "83475921",
+    "getMarketplaceMaxValue()": "f9a23e86",
+    "getMarketplaceMinValue()": "5c1b40f1",
+    "hasERC721TokenSold(address,uint256)": "511bc84c",
+    "markERC721Token(address,uint256,bool)": "5a3c652d",
+    "setERC721ContractPrimarySaleFeePercentage(address,uint8)": "ae312a97"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.18+commit.87f61d96\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_amount\",\"type\":\"uint256\"}],\"name\":\"calculateMarketplaceFee\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_contractAddress\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_amount\",\"type\":\"uint256\"}],\"name\":\"calculatePrimarySaleFee\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_contractAddress\",\"type\":\"address\"}],\"name\":\"getERC721ContractPrimarySaleFeePercentage\",\"outputs\":[{\"internalType\":\"uint8\",\"name\":\"\",\"type\":\"uint8\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getMarketplaceFeePercentage\",\"outputs\":[{\"internalType\":\"uint8\",\"name\":\"\",\"type\":\"uint8\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getMarketplaceMaxValue\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getMarketplaceMinValue\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_contractAddress\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_tokenId\",\"type\":\"uint256\"}],\"name\":\"hasERC721TokenSold\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_contractAddress\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_tokenId\",\"type\":\"uint256\"},{\"internalType\":\"bool\",\"name\":\"_hasSold\",\"type\":\"bool\"}],\"name\":\"markERC721Token\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_contractAddress\",\"type\":\"address\"},{\"internalType\":\"uint8\",\"name\":\"_percentage\",\"type\":\"uint8\"}],\"name\":\"setERC721ContractPrimarySaleFeePercentage\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"calculateMarketplaceFee(uint256)\":{\"details\":\"Utility function for calculating the marketplace fee for given amount of wei.\",\"params\":{\"_amount\":\"uint256 wei amount.\"},\"returns\":{\"_0\":\"uint256 wei fee.\"}},\"calculatePrimarySaleFee(address,uint256)\":{\"details\":\"Utility function for calculating the primary sale fee for given amount of wei\",\"params\":{\"_amount\":\"uint256 wei amount.\",\"_contractAddress\":\"address ERC721Contract address.\"},\"returns\":{\"_0\":\"uint256 wei fee.\"}},\"getERC721ContractPrimarySaleFeePercentage(address)\":{\"details\":\"Get the primary sale fee percentage for a specific ERC721 contract.\",\"params\":{\"_contractAddress\":\"address ERC721Contract address.\"},\"returns\":{\"_0\":\"uint8 wei primary sale fee.\"}},\"getMarketplaceFeePercentage()\":{\"details\":\"Get the marketplace fee percentage.\",\"returns\":{\"_0\":\"uint8 wei fee.\"}},\"getMarketplaceMaxValue()\":{\"details\":\"Get the max value to be used with the marketplace.\",\"returns\":{\"_0\":\"uint256 wei value.\"}},\"getMarketplaceMinValue()\":{\"details\":\"Get the max value to be used with the marketplace.\",\"returns\":{\"_0\":\"uint256 wei value.\"}},\"hasERC721TokenSold(address,uint256)\":{\"details\":\"Check whether the ERC721 token has sold at least once.\",\"params\":{\"_contractAddress\":\"address ERC721Contract address.\",\"_tokenId\":\"uint256 token ID.\"},\"returns\":{\"_0\":\"bool of whether the token has sold.\"}},\"markERC721Token(address,uint256,bool)\":{\"details\":\"Mark a token as sold. Requirements: - `_contractAddress` cannot be the zero address.\",\"params\":{\"_contractAddress\":\"address ERC721Contract address.\",\"_hasSold\":\"bool of whether the token should be marked sold or not.\",\"_tokenId\":\"uint256 token ID.\"}}},\"title\":\"IMarketplaceSettings Settings governing a marketplace.\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/marketplace/IMarketplaceSettings.sol\":\"IMarketplaceSettings\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@ensdomains/buffer/=lib/buffer/\",\":@ensdomains/ens-contracts/=lib/ens-contracts/contracts/\",\":@openzeppelin/contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/\",\":@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/\",\":@uniswap/v3-core/=lib/v3-core/contracts/\",\":@uniswap/v3-core/contracts/=lib/v3-core/contracts/\",\":@uniswap/v3-periphery/=lib/v3-periphery/contracts/\",\":arachnid/solidity-stringutils/=lib/solidity-stringutils/\",\":ds-test/=lib/ds-test/src/\",\":ensdomains/ens-contracts/=lib/ensdomains/ens-contracts/contracts/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/\",\":openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/\",\":rareprotocol/assets/=lib/assets/src/\",\":rareprotocol/aux/=src/\",\":royalty-guard/=lib/royalty-guard/src/royalty-guard/\",\":royalty-registry-solidity/=lib/royalty-registry-solidity/contracts/\",\":royalty-registry/=lib/royalty-registry-solidity/contracts/\",\":solmate/=lib/solmate/src/\"],\"viaIR\":true},\"sources\":{\"src/marketplace/IMarketplaceSettings.sol\":{\"keccak256\":\"0xa42b0f448c52cc04ca1c3b013ecbf99b9b5d857e7ed37a8fe178669fab933083\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://00f697de6e1de92ccd4fd260ce9bde6fca290121f5f7e2b7d9cee8f718670ff0\",\"dweb:/ipfs/Qmbt7gXsaTG8WmeFaLSCeNy3ViZgLRgeNfwHpRwL1hia13\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": { "version": "0.8.18+commit.87f61d96" },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            { "internalType": "uint256", "name": "_amount", "type": "uint256" }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "calculateMarketplaceFee",
+          "outputs": [
+            { "internalType": "uint256", "name": "", "type": "uint256" }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "_contractAddress",
+              "type": "address"
+            },
+            { "internalType": "uint256", "name": "_amount", "type": "uint256" }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "calculatePrimarySaleFee",
+          "outputs": [
+            { "internalType": "uint256", "name": "", "type": "uint256" }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "_contractAddress",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getERC721ContractPrimarySaleFeePercentage",
+          "outputs": [{ "internalType": "uint8", "name": "", "type": "uint8" }]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getMarketplaceFeePercentage",
+          "outputs": [{ "internalType": "uint8", "name": "", "type": "uint8" }]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getMarketplaceMaxValue",
+          "outputs": [
+            { "internalType": "uint256", "name": "", "type": "uint256" }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getMarketplaceMinValue",
+          "outputs": [
+            { "internalType": "uint256", "name": "", "type": "uint256" }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "_contractAddress",
+              "type": "address"
+            },
+            { "internalType": "uint256", "name": "_tokenId", "type": "uint256" }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "hasERC721TokenSold",
+          "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "_contractAddress",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "_tokenId",
+              "type": "uint256"
+            },
+            { "internalType": "bool", "name": "_hasSold", "type": "bool" }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "markERC721Token"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "_contractAddress",
+              "type": "address"
+            },
+            { "internalType": "uint8", "name": "_percentage", "type": "uint8" }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "setERC721ContractPrimarySaleFeePercentage"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {
+          "calculateMarketplaceFee(uint256)": {
+            "details": "Utility function for calculating the marketplace fee for given amount of wei.",
+            "params": { "_amount": "uint256 wei amount." },
+            "returns": { "_0": "uint256 wei fee." }
+          },
+          "calculatePrimarySaleFee(address,uint256)": {
+            "details": "Utility function for calculating the primary sale fee for given amount of wei",
+            "params": {
+              "_amount": "uint256 wei amount.",
+              "_contractAddress": "address ERC721Contract address."
+            },
+            "returns": { "_0": "uint256 wei fee." }
+          },
+          "getERC721ContractPrimarySaleFeePercentage(address)": {
+            "details": "Get the primary sale fee percentage for a specific ERC721 contract.",
+            "params": { "_contractAddress": "address ERC721Contract address." },
+            "returns": { "_0": "uint8 wei primary sale fee." }
+          },
+          "getMarketplaceFeePercentage()": {
+            "details": "Get the marketplace fee percentage.",
+            "returns": { "_0": "uint8 wei fee." }
+          },
+          "getMarketplaceMaxValue()": {
+            "details": "Get the max value to be used with the marketplace.",
+            "returns": { "_0": "uint256 wei value." }
+          },
+          "getMarketplaceMinValue()": {
+            "details": "Get the max value to be used with the marketplace.",
+            "returns": { "_0": "uint256 wei value." }
+          },
+          "hasERC721TokenSold(address,uint256)": {
+            "details": "Check whether the ERC721 token has sold at least once.",
+            "params": {
+              "_contractAddress": "address ERC721Contract address.",
+              "_tokenId": "uint256 token ID."
+            },
+            "returns": { "_0": "bool of whether the token has sold." }
+          },
+          "markERC721Token(address,uint256,bool)": {
+            "details": "Mark a token as sold. Requirements: - `_contractAddress` cannot be the zero address.",
+            "params": {
+              "_contractAddress": "address ERC721Contract address.",
+              "_hasSold": "bool of whether the token should be marked sold or not.",
+              "_tokenId": "uint256 token ID."
+            }
+          }
+        },
+        "version": 1
+      },
+      "userdoc": { "kind": "user", "methods": {}, "version": 1 }
+    },
+    "settings": {
+      "remappings": [
+        "@ensdomains/buffer/=lib/buffer/",
+        "@ensdomains/ens-contracts/=lib/ens-contracts/contracts/",
+        "@openzeppelin/contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/",
+        "@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/",
+        "@uniswap/v3-core/=lib/v3-core/contracts/",
+        "@uniswap/v3-core/contracts/=lib/v3-core/contracts/",
+        "@uniswap/v3-periphery/=lib/v3-periphery/contracts/",
+        "arachnid/solidity-stringutils/=lib/solidity-stringutils/",
+        "ds-test/=lib/ds-test/src/",
+        "ensdomains/ens-contracts/=lib/ensdomains/ens-contracts/contracts/",
+        "forge-std/=lib/forge-std/src/",
+        "openzeppelin-contracts-upgradeable/=lib/openzeppelin-contracts-upgradeable/contracts/",
+        "openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/",
+        "rareprotocol/assets/=lib/assets/src/",
+        "rareprotocol/aux/=src/",
+        "royalty-guard/=lib/royalty-guard/src/royalty-guard/",
+        "royalty-registry-solidity/=lib/royalty-registry-solidity/contracts/",
+        "royalty-registry/=lib/royalty-registry-solidity/contracts/",
+        "solmate/=lib/solmate/src/"
+      ],
+      "optimizer": { "enabled": true, "runs": 200 },
+      "metadata": { "bytecodeHash": "ipfs" },
+      "compilationTarget": {
+        "src/marketplace/IMarketplaceSettings.sol": "IMarketplaceSettings"
+      },
+      "evmVersion": "paris",
+      "libraries": {},
+      "viaIR": true
+    },
+    "sources": {
+      "src/marketplace/IMarketplaceSettings.sol": {
+        "keccak256": "0xa42b0f448c52cc04ca1c3b013ecbf99b9b5d857e7ed37a8fe178669fab933083",
+        "urls": [
+          "bzz-raw://00f697de6e1de92ccd4fd260ce9bde6fca290121f5f7e2b7d9cee8f718670ff0",
+          "dweb:/ipfs/Qmbt7gXsaTG8WmeFaLSCeNy3ViZgLRgeNfwHpRwL1hia13"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/marketplace/IMarketplaceSettings.sol",
+    "id": 60638,
+    "exportedSymbols": { "IMarketplaceSettings": [60637] },
+    "nodeType": "SourceUnit",
+    "src": "32:3184:159",
+    "nodes": [
+      {
+        "id": 60564,
+        "nodeType": "PragmaDirective",
+        "src": "32:23:159",
+        "nodes": [],
+        "literals": ["solidity", "^", "0.8", ".0"]
+      },
+      {
+        "id": 60637,
+        "nodeType": "ContractDefinition",
+        "src": "130:3085:159",
+        "nodes": [
+          {
+            "id": 60571,
+            "nodeType": "FunctionDefinition",
+            "src": "474:66:159",
+            "nodes": [],
+            "documentation": {
+              "id": 60566,
+              "nodeType": "StructuredDocumentation",
+              "src": "361:108:159",
+              "text": " @dev Get the max value to be used with the marketplace.\n @return uint256 wei value."
+            },
+            "functionSelector": "f9a23e86",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getMarketplaceMaxValue",
+            "nameLocation": "483:22:159",
+            "parameters": {
+              "id": 60567,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "505:2:159"
+            },
+            "returnParameters": {
+              "id": 60570,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 60569,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 60571,
+                  "src": "531:7:159",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 60568,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "531:7:159",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "530:9:159"
+            },
+            "scope": 60637,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 60577,
+            "nodeType": "FunctionDefinition",
+            "src": "659:66:159",
+            "nodes": [],
+            "documentation": {
+              "id": 60572,
+              "nodeType": "StructuredDocumentation",
+              "src": "546:108:159",
+              "text": " @dev Get the max value to be used with the marketplace.\n @return uint256 wei value."
+            },
+            "functionSelector": "5c1b40f1",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getMarketplaceMinValue",
+            "nameLocation": "668:22:159",
+            "parameters": {
+              "id": 60573,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "690:2:159"
+            },
+            "returnParameters": {
+              "id": 60576,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 60575,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 60577,
+                  "src": "716:7:159",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 60574,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "716:7:159",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "715:9:159"
+            },
+            "scope": 60637,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 60583,
+            "nodeType": "FunctionDefinition",
+            "src": "1004:69:159",
+            "nodes": [],
+            "documentation": {
+              "id": 60578,
+              "nodeType": "StructuredDocumentation",
+              "src": "910:89:159",
+              "text": " @dev Get the marketplace fee percentage.\n @return uint8 wei fee."
+            },
+            "functionSelector": "83475921",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getMarketplaceFeePercentage",
+            "nameLocation": "1013:27:159",
+            "parameters": {
+              "id": 60579,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1040:2:159"
+            },
+            "returnParameters": {
+              "id": 60582,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 60581,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 60583,
+                  "src": "1066:5:159",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 60580,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1066:5:159",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1065:7:159"
+            },
+            "scope": 60637,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 60591,
+            "nodeType": "FunctionDefinition",
+            "src": "1259:106:159",
+            "nodes": [],
+            "documentation": {
+              "id": 60584,
+              "nodeType": "StructuredDocumentation",
+              "src": "1079:175:159",
+              "text": " @dev Utility function for calculating the marketplace fee for given amount of wei.\n @param _amount uint256 wei amount.\n @return uint256 wei fee."
+            },
+            "functionSelector": "c3fc4952",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "calculateMarketplaceFee",
+            "nameLocation": "1268:23:159",
+            "parameters": {
+              "id": 60587,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 60586,
+                  "mutability": "mutable",
+                  "name": "_amount",
+                  "nameLocation": "1300:7:159",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 60591,
+                  "src": "1292:15:159",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 60585,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1292:7:159",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1291:17:159"
+            },
+            "returnParameters": {
+              "id": 60590,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 60589,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 60591,
+                  "src": "1356:7:159",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 60588,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1356:7:159",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1355:9:159"
+            },
+            "scope": 60637,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 60599,
+            "nodeType": "FunctionDefinition",
+            "src": "1753:131:159",
+            "nodes": [],
+            "documentation": {
+              "id": 60592,
+              "nodeType": "StructuredDocumentation",
+              "src": "1551:197:159",
+              "text": " @dev Get the primary sale fee percentage for a specific ERC721 contract.\n @param _contractAddress address ERC721Contract address.\n @return uint8 wei primary sale fee."
+            },
+            "functionSelector": "b28a7bad",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getERC721ContractPrimarySaleFeePercentage",
+            "nameLocation": "1762:41:159",
+            "parameters": {
+              "id": 60595,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 60594,
+                  "mutability": "mutable",
+                  "name": "_contractAddress",
+                  "nameLocation": "1812:16:159",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 60599,
+                  "src": "1804:24:159",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 60593,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1804:7:159",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1803:26:159"
+            },
+            "returnParameters": {
+              "id": 60598,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 60597,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 60599,
+                  "src": "1877:5:159",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 60596,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1877:5:159",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1876:7:159"
+            },
+            "scope": 60637,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 60609,
+            "nodeType": "FunctionDefinition",
+            "src": "2133:132:159",
+            "nodes": [],
+            "documentation": {
+              "id": 60600,
+              "nodeType": "StructuredDocumentation",
+              "src": "1890:238:159",
+              "text": " @dev Utility function for calculating the primary sale fee for given amount of wei\n @param _contractAddress address ERC721Contract address.\n @param _amount uint256 wei amount.\n @return uint256 wei fee."
+            },
+            "functionSelector": "6357f1ac",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "calculatePrimarySaleFee",
+            "nameLocation": "2142:23:159",
+            "parameters": {
+              "id": 60605,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 60602,
+                  "mutability": "mutable",
+                  "name": "_contractAddress",
+                  "nameLocation": "2174:16:159",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 60609,
+                  "src": "2166:24:159",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 60601,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2166:7:159",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 60604,
+                  "mutability": "mutable",
+                  "name": "_amount",
+                  "nameLocation": "2200:7:159",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 60609,
+                  "src": "2192:15:159",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 60603,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2192:7:159",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2165:43:159"
+            },
+            "returnParameters": {
+              "id": 60608,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 60607,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 60609,
+                  "src": "2256:7:159",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 60606,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2256:7:159",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2255:9:159"
+            },
+            "scope": 60637,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 60619,
+            "nodeType": "FunctionDefinition",
+            "src": "2509:125:159",
+            "nodes": [],
+            "documentation": {
+              "id": 60610,
+              "nodeType": "StructuredDocumentation",
+              "src": "2271:233:159",
+              "text": " @dev Check whether the ERC721 token has sold at least once.\n @param _contractAddress address ERC721Contract address.\n @param _tokenId uint256 token ID.\n @return bool of whether the token has sold."
+            },
+            "functionSelector": "511bc84c",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "hasERC721TokenSold",
+            "nameLocation": "2518:18:159",
+            "parameters": {
+              "id": 60615,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 60612,
+                  "mutability": "mutable",
+                  "name": "_contractAddress",
+                  "nameLocation": "2545:16:159",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 60619,
+                  "src": "2537:24:159",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 60611,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2537:7:159",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 60614,
+                  "mutability": "mutable",
+                  "name": "_tokenId",
+                  "nameLocation": "2571:8:159",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 60619,
+                  "src": "2563:16:159",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 60613,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2563:7:159",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2536:44:159"
+            },
+            "returnParameters": {
+              "id": 60618,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 60617,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 60619,
+                  "src": "2628:4:159",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 60616,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2628:4:159",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2627:6:159"
+            },
+            "scope": 60637,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 60629,
+            "nodeType": "FunctionDefinition",
+            "src": "2957:123:159",
+            "nodes": [],
+            "documentation": {
+              "id": 60620,
+              "nodeType": "StructuredDocumentation",
+              "src": "2640:312:159",
+              "text": " @dev Mark a token as sold.\n Requirements:\n - `_contractAddress` cannot be the zero address.\n @param _contractAddress address ERC721Contract address.\n @param _tokenId uint256 token ID.\n @param _hasSold bool of whether the token should be marked sold or not."
+            },
+            "functionSelector": "5a3c652d",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "markERC721Token",
+            "nameLocation": "2966:15:159",
+            "parameters": {
+              "id": 60627,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 60622,
+                  "mutability": "mutable",
+                  "name": "_contractAddress",
+                  "nameLocation": "2999:16:159",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 60629,
+                  "src": "2991:24:159",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 60621,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2991:7:159",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 60624,
+                  "mutability": "mutable",
+                  "name": "_tokenId",
+                  "nameLocation": "3033:8:159",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 60629,
+                  "src": "3025:16:159",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 60623,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3025:7:159",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 60626,
+                  "mutability": "mutable",
+                  "name": "_hasSold",
+                  "nameLocation": "3056:8:159",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 60629,
+                  "src": "3051:13:159",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 60625,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3051:4:159",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2981:89:159"
+            },
+            "returnParameters": {
+              "id": 60628,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "3079:0:159"
+            },
+            "scope": 60637,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 60636,
+            "nodeType": "FunctionDefinition",
+            "src": "3086:127:159",
+            "nodes": [],
+            "functionSelector": "ae312a97",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setERC721ContractPrimarySaleFeePercentage",
+            "nameLocation": "3095:41:159",
+            "parameters": {
+              "id": 60634,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 60631,
+                  "mutability": "mutable",
+                  "name": "_contractAddress",
+                  "nameLocation": "3154:16:159",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 60636,
+                  "src": "3146:24:159",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 60630,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3146:7:159",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 60633,
+                  "mutability": "mutable",
+                  "name": "_percentage",
+                  "nameLocation": "3186:11:159",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 60636,
+                  "src": "3180:17:159",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint8",
+                    "typeString": "uint8"
+                  },
+                  "typeName": {
+                    "id": 60632,
+                    "name": "uint8",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "3180:5:159",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint8",
+                      "typeString": "uint8"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "3136:67:159"
+            },
+            "returnParameters": {
+              "id": 60635,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "3212:0:159"
+            },
+            "scope": 60637,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "IMarketplaceSettings",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 60565,
+          "nodeType": "StructuredDocumentation",
+          "src": "57:72:159",
+          "text": " @title IMarketplaceSettings Settings governing a marketplace."
+        },
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [60637],
+        "name": "IMarketplaceSettings",
+        "nameLocation": "140:20:159",
+        "scope": 60638,
+        "usedErrors": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 159
+}
